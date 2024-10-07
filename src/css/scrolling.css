@@ -1,0 +1,14 @@
+/* для Chrome и Safari */
+.container::-webkit-scrollbar {
+    width: 5px; /* ширина полосы прокрутки */
+    height: 5px; /* высота полосы прокрутки */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* цвет полосы прокрутки */
+    border-radius: 5px; /* радиус закругления */
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #fff; /* цвет фона полосы прокрутки */
+}

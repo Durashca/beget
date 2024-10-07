@@ -1,0 +1,53 @@
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+}
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+    visibility: visible;
+}
+.offcanvas.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 400px;
+    border-right: 1px solid rgba(0, 0, 0, 0.175);
+    transform: translateX(-100%);
+}
+.offcanvas {
+    max-width: 90%;
+    box-shadow: 2px 2px 40px floralwhite;
+}
+.offcanvas-start {
+    border-radius: 0 15px 15px 0;
+}
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #212529;
+    visibility: hidden;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+offcanvas-body {
+    overflow: hidden;
+
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+    visibility: visible;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}

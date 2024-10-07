@@ -1,0 +1,47 @@
+.Modal {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+
+   }
+
+
+
+   
+   .modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: 0 auto;
+   }
+@media only screen and (max-width: 768px) {
+
+    .modalContent {
+        width: 100%;
+    }
+}
+   
+   .modalContent h2 {
+    margin-bottom: 20px;
+   }
+   
+   #form {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   #form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   }
+   
+
+   

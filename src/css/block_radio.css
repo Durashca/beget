@@ -1,0 +1,12 @@
+.block_radio {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid gray;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.block_radio input {
+    
+    margin-right: 10px;
+}

@@ -1,0 +1,45 @@
+ /* CSS для установки отступов */
+#idIcoMenu {
+   max-width: 5%;
+   min-width: 1%;
+ }
+ .commentsContainer  { /* блок с коментом */
+    border: 1px solid darkgrey;
+    border-radius: 3px 3px 10px 3px;
+    margin: 3% 0;
+    width: auto;
+    display: flex;
+    align-self: start;
+}
+/* форма отправки*/
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.comment {
+    margin-bottom: 20px;
+
+}
+.comment-author{
+  margin: 0;
+}
+.comment-header{
+  margin: 0 0 2px;
+  font-weight: bold;
+}
+
+#commentForm {
+    margin: 0 10px;
+}
+#comments_users {
+    margin: 10px;
+}
+
+
+.commentsContainer  div.container {
+
+}
+
+
+

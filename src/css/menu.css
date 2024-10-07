@@ -1,0 +1,49 @@
+nav {
+    background-image: linear-gradient(rgba(112.520718, 44.062154, 249.437846, 1), rgba(112.520718, 44.062154, 249.437846, 0.95));
+    padding: 20px;
+    color: white;
+}
+
+/* right offcanvas*/
+
+.inputs input {
+    width: 100%;
+    border-radius: 0;
+    border: 0.5px solid gray
+}
+
+#changingformsToProfile {
+    margin-top: auto;
+}
+
+div.inputs {
+    width: 100%; padding: 0;
+}
+
+ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+div.bottom_form {
+    margin-top: 6%;
+    margin-bottom: 1rem;
+}
+
+ul.navbar-nav li.nav-item {
+    margin: 0 10px;
+    text-align: center;
+
+
+}
+
+ul.navbar-nav li.nav-item a:hover  {
+    text-decoration: underline; /* Или другой стиль подчеркивания */
+
+}
+ul.navbar-nav li.nav-item a {
+    color: white;
+    text-decoration: none
+}

@@ -1,0 +1,142 @@
+
+video {
+    /*max-width: 900px;*/
+    width: 100%;
+    height: auto;
+}
+
+.offcanvas-body > button:last-child {
+    order: 1;
+}
+header {
+    margin-bottom: 10px !important;
+}
+
+.hide {
+    display: none;
+}
+
+#h-space {
+    height: 50px;
+}
+
+ol {
+    display: grid;
+}
+
+/*заголовок cлайдов (h3)*/
+h3 {
+    margin-bottom: 10%;
+}
+
+.profile {
+    width: 44px;
+    margin-left: 5px;
+    margin-right: 25px;
+    padding: 0;
+    border-color: transparent !important;
+}
+
+/*для transferring_files*/
+
+ol.meterial-block li {
+    margin: 2% 0;
+}
+/*картинки общее*/
+div.keyboard-shortcut-block img {
+    width: 80%;
+    margin: 1% auto;
+    min-height: 350px;
+
+}
+/*для списка в карточке инфо*/
+div.bd-callout.bd-callout-info ol > li{
+    margin-bottom: 0.8%;
+}
+
+.error-input {
+    background: rgb(255 218 218);
+    border-color: #f66e6e;
+}
+
+/*для кнопок перехода на сл. страницу*/
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/*вопросы*/
+.form-check {
+    margin: 0.3% 0;
+}
+/*кнопки*/
+#btn-task-check {
+    padding: 0.7%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#createPageButton {
+    margin:  0.2% 0;
+    display: block;
+}
+
+.material-body-scroll {
+    min-height: 200px;
+    height: auto; /* Установите максимальную высоту дива */
+    max-height: 90%;
+    overflow-y: auto; /* Добавьте вертикальную прокрутку при необходимости */
+}
+
+/*зеленая карточка*/
+.bd-callout-green {
+    --bd-callout-color: #6ef67d;
+    --bd-callout-bg: #03300d;
+    --bd-callout-border: #089011;
+}
+
+/*красная карточка*/
+.bd-callout-red {
+    --bd-callout-color: #f66e6e;
+    --bd-callout-bg: #490a0d;
+    --bd-callout-border: #990404;
+}
+
+/*синея карточка*/
+.bd-callout-info {
+    --bd-callout-color: #6edff6;
+    --bd-callout-bg: #032830;
+    --bd-callout-border: #087990;
+}
+
+/*желтая карточка*/
+.bd-callout-warning {
+    --bd-callout-color: #ffda6a;
+    --bd-callout-bg: #332701;
+    --bd-callout-border: #997404;
+}
+
+/*желтая карточка*/
+.bd-callout-orange {
+    --bd-callout-color: #ffbb83;
+    --bd-callout-bg: #e86000;
+    --bd-callout-border: #f58a3a;
+}
+
+
+
+/*применение карточки*/
+.bd-callout {
+    --bs-link-color-rgb: 110, 168, 254;
+    --bs-code-color: #e685b5;
+    padding: 1.25rem;
+    margin-top: 1.20rem;
+    margin-bottom: 1.20rem;
+    border-radius: 0 10px 10px 10px;
+    color: var(--bd-callout-color, inherit);
+    background-color: var(--bd-callout-bg);
+    border-left: 0.25rem solid var(--bd-callout-border);
+}
+
+
+
