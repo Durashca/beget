@@ -63,7 +63,7 @@ document.querySelector('#createPageButton').addEventListener('click', function()
             localStorage.setItem('results', JSON.stringify(result_arr));
             
         }
-        git branch --show-current
+    
 });
 </script>
 
