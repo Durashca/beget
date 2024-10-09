@@ -9,10 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // нажатие на кнопку
         mysqli_query($link, "SET NAMES 'utf8'");
 
 
-        $name = $_POST['reg_name'];
-        $surname = $_POST['reg_surname'];
+        $name = ucfirst($_POST['reg_name']);
+        $surname = ucfirst($_POST['reg_surname']);
 
-        $class = $_POST['reg_class_figure'] . ($_POST['reg_class_letter'] === 'нету' ? '' : $_POST['reg_class_letter']);
+        $class = $_POST['reg_class_figure'] . ($_POST['reg_class_letter'] === 'нету' ? '' : ucfirst($_POST['reg_class_letter']) );
 
         $age = $_POST['reg_age'];
 

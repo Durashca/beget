@@ -18,10 +18,17 @@
     <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Подсказка</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Как работаем:</h1>
       </div>
       <div class="modal-body">
-        <h3 stule="text-align: center;">Регистрируемся, отвечаем правильно на все вопросы</h3>
+        <h3 stule="text-align: center;">
+          <ul style="font-size: 18px;">
+            <li>Регистрируемся</li>
+            <li>Отвечаем  на вопросы</li>
+            <li>Забираем сертификат</li>
+            
+          </ul>
+         </h3>
         <div  style="display: flex; justify-content: center; margin: 1% 0;">
             <button id="createPageButton" type="button" class="btn btn-outline-success">
             <a class="nav-link active" href="registration.php">Перейти к регистрации</a>

@@ -92,7 +92,7 @@
                                         <label for="regClass" class="form-label">Напишите свой класс</label>
 
                                         <div class="input-group">
-                                            <input id="regClassFigure" name="reg_class_figure" placeholder="цифра" type="text" list="options" required>
+                                            <input id="regClassFigure" maxlength="2" name="reg_class_figure" placeholder="цифра" type="text" list="options" required>
                                             <datalist id="options">
                                                 <option value="1"></option>
                                                 <option value="2"></option>
@@ -106,7 +106,7 @@
                                                 <option value="10"></option>
                                                 <option value="11"></option>
                                             </datalist>
-                                            <input id="regClassLetter" name="reg_class_letter" placeholder="буква" type="text" list="options2" >
+                                            <input id="regClassLetter" maxlength="4" name="reg_class_letter" placeholder="буква" type="text" list="options2" >
                                             <datalist id="options2">
                                                 <option value="А"></option>
                                                 <option value="Б"></option>
@@ -121,7 +121,7 @@
                                     </div>
 
                                     <label for="reg_age" class="form-label">Введите свой год рождения</label>
-                                    <input type="date" id="reg_age" name="reg_age" min="1903-12-31" max="2019-12-31" required>
+                                    <input type="date" id="reg_age" name="reg_age" min="1903-12-31" max="2019-12-31" inputmode="numeric date" required>
 
 
                                 </div>
