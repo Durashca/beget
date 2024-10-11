@@ -48,6 +48,7 @@
             /* Отрицательный отступ для перекрытия поля ввода */
         }
     </style>
+
 </head>
 
 <body>
@@ -66,10 +67,10 @@
                                 <div class="col">
                                     <div class="input-container">
 
-                                        <label for="regName" class="form-label">Напишите свое имя</label>
+                                        <label for="regName" class="form-label">Укажите свое имя</label>
                                         <input id="regName" name="reg_name" type="text" placeholder=" Введите имя" required readonly onfocus="this.removeAttribute('readonly');">
 
-                                        <label for="regSurName" class="form-label">Напишите фамилию</label>
+                                        <label for="regSurName" class="form-label">Укажите фамилию</label>
                                         <input id="regSurName" name="reg_surname" type="text" placeholder="Напишите фамилию" required readonly onfocus="this.removeAttribute('readonly');">
                                         <style>
                                             .input-group {
@@ -89,7 +90,7 @@
                                                 margin-right: 0.5rem;
                                             }
                                         </style>
-                                        <label for="regClass" class="form-label">Напишите свой класс</label>
+                                        <label for="regClass" class="form-label">Укажите свой класс</label>
 
                                         <div class="input-group">
                                             <input id="regClassFigure" maxlength="2" name="reg_class_figure" placeholder="цифра" type="text" list="options" required>
@@ -106,17 +107,42 @@
                                                 <option value="10"></option>
                                                 <option value="11"></option>
                                             </datalist>
-                                            <input id="regClassLetter" maxlength="4" name="reg_class_letter" placeholder="буква" type="text" list="options2" >
+                                            <input id="regClassLetter" maxlength="4" name="reg_class_letter" placeholder="буква" type="text" list="options2">
                                             <datalist id="options2">
                                                 <option value="А"></option>
                                                 <option value="Б"></option>
                                                 <option value="В"></option>
                                                 <option value="Г"></option>
-                                                <option value="нету"></option>
+
                                             </datalist>
 
-                                            
                                         </div>
+                                        <!-- ФЛанг -->
+                                        <div style="display: block;" class="form-check">
+                                            <input style="width: 19px;" class="form-check-input" type="checkbox" value="" id="ClassCheckChecked">
+                                            <label class="form-check-label" for="ClassCheckChecked">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        Нет буквы класса
+                                                    </font>
+                                                </font>
+                                            </label>
+                                        </div>
+
+                                        <script>
+                                            const checkbox = document.getElementById('ClassCheckChecked');
+                                            const inputField = document.getElementById('regClassLetter');
+
+                                            checkbox.addEventListener('change', () => {
+                                                if (checkbox.checked) {
+                                                    inputField.disabled = true;
+                                                } else {
+                                                    inputField.disabled = false;
+                                                }
+                                            });
+                                        </script>
+                                        <!-- ФЛанг -->
+
 
                                     </div>
 
@@ -126,36 +152,14 @@
 
                                 </div>
                             </div>
+
                             <div class="bottom_form col">
                                 <input style="width: 100%;" id="regButton" class="btn btn-outline-success" type="submit"
-                                    value="Создать аккаунт" disabled>
+                                    value="Создать аккаунт" >
                             </div>
+
                     </div>
 
-                    <script>
-                        let nameInputReg = document.getElementById('regName');
-                        document.getElementById('regName').addEventListener('input', validateForm);
-                        document.getElementById('regSurName').addEventListener('input', validateForm);
-                        document.getElementById('regClassFigure').addEventListener('input', validateForm);
-                        document.getElementById('regClassLetter').addEventListener('input', validateForm);
-                        document.getElementById('reg_age').addEventListener('input', validateForm);
-
-
-
-                        function validateForm() {
-                            const name = document.getElementById('regName').value;
-                            const regSurName = document.getElementById('regSurName').value;
-                            const regClassFigure = document.getElementById('regClassFigure').value;
-                            const regClassLetter = document.getElementById('regClassLetter').value;
-                            const age = document.getElementById('reg_age');
-
-                            if (name === '' || regSurName === '' || regClassLetter === '' || regClassFigure === '' || age.value === '') {
-                                document.getElementById('regButton').disabled = true;
-                            } else {
-                                document.getElementById('regButton').disabled = false;
-                            }
-                        }
-                    </script>
                     </form>
 
                 </div>

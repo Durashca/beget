@@ -40,7 +40,7 @@
               </div> 
               <div style="display: flex; justify-content: center; margin: 1% 0;"> 
                 <button id="createPageButton" type="button" class="btn btn-outline-success"> 
-                    <a class="nav-link active" href="test_Hotkeys.php">Ответить </a>
+                    <a class="nav-link active disabled" href="test_Hotkeys.php">Ответить </a>
                  </button> 
                 </div>
      </div>

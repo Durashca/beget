@@ -36,11 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
       link.href = cssFile;
       document.head.appendChild(link);
     });
+
+    
   
     // Добавляем JavaScript-файлы
     const jsFiles = [
       'src/js/navbar_creator.js',
-      'src/js/OfflineBootstrapJs.js'
+      'src/js/OfflineBootstrapJs.js',
+      'src/js/transition.js'
     ];
   
     jsFiles.forEach((jsFile) => {
