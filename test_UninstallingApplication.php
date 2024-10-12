@@ -37,13 +37,16 @@
                             <label for="option4" style="margin-left: 10px;">Выучить стих по физкультуре.</label>
                         </div>
                     </div>
-                    <div style="display: flex; justify-content: center; margin: 1% 0;">
+                    <div id="transition_warning"
+                  
+                        style="display: flex; justify-content: center; margin: 1% 0;">
                         <button id="createPageButton" type="button" class="btn btn-outline-success">
                             <a class="nav-link active" href="test_AudioErrors.php">Ответить</a>
                         </button>
                     </div>
                 </div>
             </div>
+
             <script>
                 const radioButtons = document.querySelectorAll('input[type="radio"]');
                 document.querySelector('#createPageButton').addEventListener('click', function() {
@@ -66,7 +69,7 @@
                     }
                 });
             </script>
-<script src="src/js/additionally.js"></script>
+            <script src="src/js/additionally.js"></script>
 </body>
 
 </html>

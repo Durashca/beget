@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // нажатие на кнопку
 
         // Регистрация нового пользователя
 
-        $query = "INSERT INTO users (`name`, `surname`, `class`) VALUES (?,?,?);";
+        $query = "INSERT INTO users (`name`, `surname`, `class`) VALUES (?,?, ? );";
         $stmt = mysqli_prepare($link, $query);
         if (!$stmt) {
             die("Ошибка подготовки запроса: ". mysqli_error($link));
@@ -49,12 +49,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // нажатие на кнопку
             // Получение id нового пользователя
             $userId = mysqli_insert_id($link);
 
-            $query = "INSERT INTO progress (id, age) VALUES (?,?);";
+            $query = "INSERT INTO progress (id, age, class) VALUES (?,?, ?);";
             $stmt = mysqli_prepare($link, $query);
             if (!$stmt) {
                 die("Ошибка подготовки запроса: ". mysqli_error($link));
             }
-            mysqli_stmt_bind_param($stmt, "is", $userId, $age);
+            mysqli_stmt_bind_param($stmt, "iss", $userId, $age, $class);
             if (!mysqli_stmt_execute($stmt)) {
                 echo "Ошибка при добавлении записи в таблицу progress: ". mysqli_error($link);
             }

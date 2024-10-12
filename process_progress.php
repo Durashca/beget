@@ -20,7 +20,7 @@ session_start();
     
     $query = "UPDATE `progress` SET `new_to_PC` =?, `download_sertificate` = '1' WHERE `progress`.`id` =?";
     $stmt = mysqli_prepare($link, $query);
-    mysqli_stmt_bind_param($stmt, "si",  $results, $id_user);
+    mysqli_stmt_bind_param($stmt, "ii",  $results, $id_user);
     $result = mysqli_stmt_execute($stmt);
 
     if ($result) {

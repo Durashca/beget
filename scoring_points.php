@@ -19,15 +19,41 @@
                 </div>
                 <div class="modal-body">
                     <script>
+                        let int_progress = 0;
+
                         document.addEventListener("DOMContentLoaded", function() {
                             let results = localStorage.getItem('results');
-                            document.getElementById('progress').value = results;
+                            if (results) {
+                                try {
+                                    let boolElems = JSON.parse(results);
+                                    if (Array.isArray(boolElems)) {
+                                        for (let boll_elem of boolElems) {
+                                            if (boll_elem) {
+                                                int_progress += 10;
+                                            }
+                                        }
+                                        console.log(int_progress);
+                                        let progressElement = document.getElementById('progress');
+                                        if (progressElement) {
+                                            progressElement.value = int_progress;
+                                        }
+                                    } else {
+                                        console.error('Данные в localStorage не являются массивом');
+                                    }
+                                } catch (e) {
+                                    console.error('Ошибка при парсинге строки:', e);
+                                }
+                            } else {
+                                console.log('Нет данных в localStorage');
+                            }
                         });
 
                         document.getElementById('createPageButton').addEventListener('click', function(event) {
-                            let results = JSON.stringify(localStorage.getItem('results'));
-                            document.getElementById('progress').value = results;
-                            event.preventDefault();
+                            let progressElement = document.getElementById('progress');
+                            if (progressElement) {
+                                progressElement.value = int_progress;
+                            }
+                            event.preventDefault(); 
                         });
                     </script>
 

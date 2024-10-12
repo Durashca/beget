@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const jsFiles = [
       'src/js/navbar_creator.js',
       'src/js/OfflineBootstrapJs.js',
-      'src/js/transition.js'
+      'src/js/transition.js',
+      'src/js/transition_warning.js'
     ];
   
     jsFiles.forEach((jsFile) => {

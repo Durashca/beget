@@ -1,13 +1,13 @@
 console.log('zzz');
-const radioButtons = document.querySelectorAll('input[type="radio"]');
-const link = document.querySelector('a.nav-link.active');
-
-radioButtons.forEach(radioButton => {
+const RadioInput = document.querySelectorAll('input[type="radio"]');
+const button = document.getElementById('createPageButton');
+button.classList.add('disabled');
+RadioInput.forEach(radioButton => {
   radioButton.addEventListener('change', () => {
-    link.classList.remove('disabled');
+    button.classList.remove('disabled');
   });
-  link.classList.add('disabled');
 });
+
 
 
 
