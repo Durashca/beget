@@ -117,28 +117,49 @@
                                             </datalist>
 
                                         </div>
-                                        <!-- ФЛанг -->
-                                        <div style="display: block;" class="form-check">
-                                            <input style="width: 19px;" class="form-check-input" type="checkbox" value="" id="ClassCheckChecked">
-                                            <label class="form-check-label" for="ClassCheckChecked">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">
-                                                        Нет буквы класса
-                                                    </font>
-                                                </font>
+
+                                        <!--  -->
+                                        <div class="form-check form-switch">
+                                            <input style="width: 30px;" class="form-check-input" type="checkbox" name="No_class" role="switch" id="No_class">
+                                            <label class="form-check-label" for="No_class">Нет буквы у класса</label>
+                                        </div>
+                                        <!--  -->
+                                        <!-- радио кнопки -->
+
+                                        <div class="form-check form-switch">
+                                            <input style="width: 30px;" class="form-check-input" type="checkbox" role="switch" name="Not_schoolboy" id="Not_schoolboy">
+                                            <label class="form-check-label" for="Not_schoolboy">
+                                                Я не школьник
                                             </label>
                                         </div>
+                                        <!-- радио кнопки -->
+
+
 
                                         <script>
-                                            const checkbox = document.getElementById('ClassCheckChecked');
-                                            const inputField = document.getElementById('regClassLetter');
+                                            document.addEventListener('DOMContentLoaded', function() {
+                                                const regClassFigure = document.getElementById('regClassFigure');
+                                                const regClassLetter = document.getElementById('regClassLetter');
+                                                const No_class = document.getElementById('No_class');
+                                                const Not_schoolboy = document.getElementById('Not_schoolboy');
 
-                                            checkbox.addEventListener('change', () => {
-                                                if (checkbox.checked) {
-                                                    inputField.disabled = true;
-                                                } else {
-                                                    inputField.disabled = false;
-                                                }
+                                                No_class.addEventListener('change', function() {
+                                                    if (this.checked) {
+                                                        regClassLetter.disabled = true;
+                                                    } else {
+                                                        regClassLetter.disabled = false;
+                                                    }
+                                                });
+
+                                                Not_schoolboy.addEventListener('change', function() {
+                                                    if (this.checked) {
+                                                        regClassLetter.disabled = true;
+                                                        regClassFigure.disabled = true;
+                                                    } else {
+                                                        regClassLetter.disabled = false;
+                                                        regClassFigure.disabled = false;
+                                                    }
+                                                });
                                             });
                                         </script>
                                         <!-- ФЛанг -->
@@ -155,7 +176,7 @@
 
                             <div class="bottom_form col">
                                 <input style="width: 100%;" id="regButton" class="btn btn-outline-success" type="submit"
-                                    value="Создать аккаунт" >
+                                    value="Создать аккаунт">
                             </div>
 
                     </div>

@@ -24,12 +24,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // нажатие на кнопку
 
 
         // Проверка на класс
-        if(isset($_POST['ClassCheckChecked']) && $_POST['ClassCheckChecked'] == 'on'){
+        if(isset($_POST['No_class']) && $_POST['No_class'] == 'on'){
             $_POST['reg_class_letter'] = '';
         }
 
+        // Проверка на класс
+        if(isset($_POST['Not_schoolboy']) && $_POST['Not_schoolboy'] == 'on'){
+            $_POST['reg_class_figure'] = 'не ';
+            $_POST['reg_class_letter'] = 'школьник';
+            
+        }
+        
     
-        $class = $_POST['reg_class_figure']. ucwords($_POST['reg_class_letter']);
+        $class = $_POST['reg_class_figure'] . ucwords($_POST['reg_class_letter']);
 
         
 
