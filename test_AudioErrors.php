@@ -36,8 +36,15 @@
 
                     </div>
                     <div style="display: flex; justify-content: center; margin: 1% 0;">
+                    <span id="transition_warning"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Вы не выбрали ни одного варианта">
+                           
+
+
                         <button id="createPageButton" type="button" class="btn btn-outline-success">
-                            <a class="nav-link active" href="test_DevicePassword.php">Ответить</a> </button>
+                            <a class="nav-link active" href="test_DevicePassword.php">Ответить</a> 
+                        </button>
+                    </span>
                     </div>
                 </div>
             </div>

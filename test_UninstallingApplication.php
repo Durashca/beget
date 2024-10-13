@@ -37,16 +37,21 @@
                             <label for="option4" style="margin-left: 10px;">Выучить стих по физкультуре.</label>
                         </div>
                     </div>
-                    <div id="transition_warning"
-                  
-                        style="display: flex; justify-content: center; margin: 1% 0;">
-                        <button id="createPageButton" type="button" class="btn btn-outline-success">
-                            <a class="nav-link active" href="test_AudioErrors.php">Ответить</a>
-                        </button>
+                        <div 
+                            style="display: flex; justify-content: center; margin: 1% 0;">
+                            <span id="transition_warning"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Вы не выбрали ни одного варианта">
+                           
+
+                            <button id="createPageButton" type="button" class="btn btn-outline-success">
+                                <a class="nav-link active" href="test_AudioErrors.php">Ответить</a>
+                            </button>
+                            </span>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
-
+   
             <script>
                 const radioButtons = document.querySelectorAll('input[type="radio"]');
                 document.querySelector('#createPageButton').addEventListener('click', function() {

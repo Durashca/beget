@@ -30,7 +30,7 @@
           </ul>
          </h3>
         <div  style="display: flex; justify-content: center; margin: 1% 0;">
-            <button id="createPageButton" type="button" class="btn btn-outline-success">
+            <button  type="button" class="btn btn-outline-success">
             <a class="nav-link active" href="registration.php">Перейти к регистрации</a>
             </button>
         </div>

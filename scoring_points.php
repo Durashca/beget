@@ -48,7 +48,7 @@
                             }
                         });
 
-                        document.getElementById('createPageButton').addEventListener('click', function(event) {
+                        document.getElementById('progress_button_csrol').addEventListener('click', function(event) {
                             let progressElement = document.getElementById('progress');
                             if (progressElement) {
                                 progressElement.value = int_progress;
@@ -61,7 +61,7 @@
                         <div style="display: flex; justify-content: center; margin: 1% 0;">
                             <form action="process_progress.php" method="POST" id="progressForm">
                                 <input id="progress" name="progress" type="hidden" value="">
-                                <input id="createPageButton" type="submit" class="btn btn-outline-success" value="Перейти к сертификату">
+                                <input id="progress_button_csrol" type="submit" class="btn btn-outline-success" value="Перейти к сертификату">
                             </form>
                         </div>
                     </div>
@@ -69,6 +69,7 @@
             </div>
 
             <script src="src/js/additionally.js"></script>
+
 </body>
 
 </html>

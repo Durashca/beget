@@ -12,9 +12,10 @@
 }
 
 
-.disabled {
-    pointer-events: none;
-    opacity: 0.65;
-    cursor: not-allowed;
-}
+
+
+.custom-tooltip {
+    --bs-tooltip-bg: rgba(112, 44, 249, 1) !important;
+    --bs-tooltip-color: white !important;
+  }
 
